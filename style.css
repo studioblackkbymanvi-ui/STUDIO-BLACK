@@ -5,6 +5,9 @@ body {
   background-color: #000;
   color: #f5f5f5;
 }
+h1, h2, .luxury-heading {
+  font-family: 'Great Vibes', cursive;
+}
 
 header {
   display: flex;
