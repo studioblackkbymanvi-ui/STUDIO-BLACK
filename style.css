@@ -85,4 +85,76 @@ footer a {
   margin: 0 10px;
   text-decoration: none;
 }
+/* Sidebar toggle button */
+#menuToggle {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  z-index: 999;
+  display: block;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1001;
+}
+
+#menuToggle span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  margin-bottom: 7px;
+  position: relative;
+  background: gold;
+  border-radius: 3px;
+  z-index: 1000;
+  transform-origin: 4px 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animate */
+#menuToggle input:checked ~ span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+#menuToggle input:checked ~ span:nth-child(2) {
+  opacity: 0;
+}
+
+#menuToggle input:checked ~ span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+
+/* Sidebar Menu */
+#menu {
+  position: fixed;
+  left: -250px;
+  width: 220px;
+  height: 100vh;
+  background: #111;
+  padding-top: 80px;
+  transition: left 0.3s ease;
+  z-index: 998;
+  border-right: 2px solid gold;
+}
+
+#menu li {
+  padding: 20px 30px;
+  color: gold;
+  font-size: 18px;
+  font-weight: bold;
+  list-style: none;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+
+#menuToggle input:checked ~ ul {
+  left: 0;
+}
 
