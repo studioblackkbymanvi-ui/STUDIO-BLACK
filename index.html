@@ -3,38 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>STUDIO BLACK</title>
+  <title>STUDIO BLACK by Manvi</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Castlegar&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Sidebar Toggle Button -->
   <div class="sidebar-toggle" onclick="toggleSidebar()">☰</div>
 
-  <!-- Sidebar -->
-  <aside id="sidebar" class="sidebar">
+  <div class="sidebar" id="sidebar">
     <a href="#">Home</a>
-    <a href="#">Collection</a>
-    <a href="#">About</a>
-    <a href="https://wa.me/91XXXXXXXXXX" target="_blank">WhatsApp</a>
-    <a href="https://www.instagram.com/studioblack/" target="_blank">Instagram</a>
-  </aside>
+    <a href="#">Collections</a>
+    <a href="#">Custom Orders</a>
+    <a href="#">Contact</a>
+  </div>
 
-  <!-- Overlay -->
-  <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
+  <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
 
-  <!-- Main Content -->
-  <main class="hero">
+  <section class="hero">
     <img src="assets/logo.png" alt="STUDIO BLACK Logo" class="logo" />
     <h1>STUDIO BLACK</h1>
-    <p class="tagline">Where Indian Elegance Meets Modern Luxury</p>
-  </main>
+    <p class="tagline">Where Indian elegance meets modern luxury.</p>
+  </section>
 
   <script>
     function toggleSidebar() {
-      document.getElementById("sidebar").classList.toggle("active");
-      document.getElementById("overlay").classList.toggle("active");
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+      sidebar.classList.toggle("active");
+      overlay.classList.toggle("active");
     }
   </script>
 </body>
