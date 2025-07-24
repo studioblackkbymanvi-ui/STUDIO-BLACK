@@ -1,123 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="/assets/logo.png" />
-    <title>STUDIO BLACK by Manvi</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Poppins:wght@300;400;600&display=swap" />
-    <style>
-      body {
-        margin: 0;
-        font-family: 'Poppins', sans-serif;
-        background-color: black;
-        color: white;
-      }
 
-      header {
-        background-color: black;
-        padding: 1.5rem 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid rgba(255, 215, 0, 0.3);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="STUDIO BLACK by Manvi" />
+  <meta property="og:image" content="/logo.png" />
+  <title>STUDIO BLACK by Manvi</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300;400;600&display=swap">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
 
-      header img {
-        height: 70px;
-        filter: drop-shadow(0 0 10px gold);
-      }
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+    }
 
-      nav a {
-        color: gold;
-        text-decoration: none;
-        margin-left: 2rem;
-        font-weight: 600;
-        font-size: 1rem;
-        transition: color 0.3s;
-      }
+    .logo {
+      width: 220px;
+      transition: 0.3s ease;
+    }
 
-      nav a:hover {
-        color: #ffd700aa;
-      }
+    .logo:hover {
+      filter: drop-shadow(0 0 10px gold);
+    }
 
-      .hero {
-        display: grid;
-        place-items: center;
-        text-align: center;
-        padding: 5rem 2rem;
-        font-family: 'Cormorant Garamond', serif;
-      }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 220px;
+      background: #111;
+      padding-top: 60px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    }
 
-      .hero h1 {
-        font-size: 4rem;
-        font-weight: 700;
-        color: gold;
-        text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
-        margin-bottom: 1rem;
-      }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
 
-      .hero p {
-        font-size: 1.4rem;
-        max-width: 700px;
-        color: #ddd;
-      }
+    nav ul li {
+      padding: 15px 20px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+    }
 
-      .btn {
-        margin-top: 2rem;
-        background: gold;
-        color: black;
-        padding: 0.75rem 1.5rem;
-        font-weight: 600;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        box-shadow: 0 0 10px gold;
-        transition: background 0.3s;
-      }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
 
-      .btn:hover {
-        background: #e6c200;
-      }
+    nav ul li a:hover {
+      color: gold;
+    }
 
-      footer {
-        background-color: black;
-        text-align: center;
-        padding: 2rem;
-        font-size: 0.9rem;
-        border-top: 1px solid rgba(255, 215, 0, 0.2);
-        color: #aaa;
-      }
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
 
-      footer a {
-        color: gold;
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <img src="/assets/logo.png" alt="STUDIO BLACK logo" />
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Collection</a>
-        <a href="#">About</a>
-        <a href="https://www.instagram.com/studioblackbymanvi" target="_blank">Instagram</a>
-        <a href="https://wa.me/918888888888" target="_blank">WhatsApp</a>
-      </nav>
-    </header>
+    .section {
+      margin-bottom: 80px;
+    }
 
-    <section class="hero">
-      <h1>STUDIO BLACK</h1>
-      <p>Where timeless Indian elegance meets modern sophistication. Custom-designed couture stitched to perfection.</p>
-      <button class="btn">Explore Our Work</button>
+    .section h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+      color: gold;
+    }
+
+    .section p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <img src="logo.png" alt="Studio Black Logo" class="logo" />
+  </header>
+
+  <div class="content">
+    <section class="section" id="about">
+      <h1>About Us</h1>
+      <p>STUDIO BLACK by Manvi is where timeless Indian elegance meets modern sophistication. Based in Ludhiana, we specialize in custom-designed ethnic, Indo-Western, and Western couture tailored to perfection.</p>
     </section>
 
-    <footer>
-      &copy; 2025 STUDIO BLACK by Manvi. All rights reserved. | <a href="https://www.instagram.com/studioblackbymanvi" target="_blank">Instagram</a>
-    </footer>
-  </body>
+    <section class="section" id="collection">
+      <h1>Collection</h1>
+      <p>Explore a curated range of sarees, lehengas, kurtis, shararas, and gowns — all handcrafted for weddings, festivals, and statement moments.</p>
+    </section>
+
+    <section class="section" id="contact">
+      <h1>Contact</h1>
+      <p>Connect with us on <a href="https://www.instagram.com/studioblackbymanvi" style="color:gold;">Instagram</a> or message us directly via WhatsApp for personalized styling and stitching options.</p>
+    </section>
+  </div>
+</body>
+
 </html>
+
 
       
 
