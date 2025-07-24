@@ -1,160 +1,122 @@
-/* Base styling */
-body {
+/* Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
   font-family: 'Castlegar', serif;
   background-color: #000;
   color: #f5f5f5;
-}
-h1, h2, .luxury-heading {
-  font-family: 'Great Vibes', cursive;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #111;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
+/* Logo */
 .logo {
-  height: 60px;
+  width: 180px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px gold);
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-nav a {
-  text-decoration: none;
-  color: gold;
-  font-weight: bold;
-}
-
+/* Hero Section */
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(to bottom, #000000, #1a1a1a);
+  padding: 20px;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
   color: gold;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 
-.hero p {
+.tagline {
   font-size: 1.2rem;
-  margin: 20px 0;
+  color: #f5f5f5;
 }
 
-.btn {
-  display: inline-block;
-  padding: 12px 30px;
-  background-color: gold;
-  color: black;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  padding: 50px;
-}
-
-.item {
-  background-color: #333;
-  height: 300px;
-  border: 2px solid gold;
-}
-
-footer {
-  text-align: center;
-  padding: 30px 20px;
-  background-color: #111;
-  color: #aaa;
-}
-
-footer a {
-  color: gold;
-  margin: 0 10px;
-  text-decoration: none;
-}
-/* Sidebar toggle button */
-#menuToggle {
-  position: fixed;
-  top: 25px;
-  left: 25px;
-  z-index: 999;
-  display: block;
-  user-select: none;
-}
-
-#menuToggle input {
-  display: block;
-  width: 40px;
-  height: 30px;
+/* Sidebar */
+.sidebar-toggle {
   position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2rem;
+  color: gold;
   cursor: pointer;
-  opacity: 0;
   z-index: 1001;
 }
 
-#menuToggle span {
-  display: block;
-  width: 35px;
-  height: 4px;
-  margin-bottom: 7px;
-  position: relative;
-  background: gold;
-  border-radius: 3px;
-  z-index: 1000;
-  transform-origin: 4px 0px;
-  transition: all 0.3s ease-in-out;
-}
-
-/* Animate */
-#menuToggle input:checked ~ span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
-}
-
-#menuToggle input:checked ~ span:nth-child(2) {
-  opacity: 0;
-}
-
-#menuToggle input:checked ~ span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -8px);
-}
-
-/* Sidebar Menu */
-#menu {
+.sidebar {
   position: fixed;
-  left: -250px;
-  width: 220px;
-  height: 100vh;
-  background: #111;
+  top: 0;
+  left: -260px;
+  width: 240px;
+  height: 100%;
+  background-color: #111;
   padding-top: 80px;
   transition: left 0.3s ease;
-  z-index: 998;
-  border-right: 2px solid gold;
+  z-index: 1000;
+  box-shadow: 4px 0 10px rgba(255, 215, 0, 0.1);
 }
 
-#menu li {
-  padding: 20px 30px;
+.sidebar a {
+  display: block;
   color: gold;
-  font-size: 18px;
-  font-weight: bold;
-  list-style: none;
-  border-bottom: 1px solid #333;
-  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 15px 25px;
+  transition: background 0.3s ease;
 }
 
-#menuToggle input:checked ~ ul {
+.sidebar a:hover {
+  background-color: #222;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 900;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 140px;
+  }
 }
 
