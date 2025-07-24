@@ -119,6 +119,64 @@ body {
     width: 140px;
   }
 }
+body {
+  background-color: #000;
+  color: gold;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #000;
+}
+
+.logo {
+  height: 60px;
+}
+
+.nav a {
+  color: gold;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.nav a.active {
+  border-bottom: 2px solid gold;
+}
+
+.about-section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #888;
+  font-size: 0.9rem;
+}
 
 
 
