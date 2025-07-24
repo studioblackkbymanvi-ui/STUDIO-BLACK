@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About – STUDIO BLACK</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sidebar-toggle" onclick="toggleSidebar()">☰</div>
+  <div class="sidebar" id="sidebar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#">Collections</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+  <section class="hero">
+    <img src="logo.png" alt="Studio Black Logo" class="logo" />
+    <h1>About Us</h1>
+    <p class="tagline">Where timeless Indian elegance meets modern sophistication.</p>
+    <div class="about-content">
+      <p>
+        At STUDIO BLACK by Manvi, we believe every outfit should tell a story. 
+        Based in Ludhiana, we specialize in handcrafted ethnic and modern couture designed with passion, precision, and purpose. 
+        Our collections blend traditional silhouettes with contemporary elegance — perfect for weddings, festivals, and statement moments.
+      </p>
+      <p>
+        From personalized fittings to custom embroidery and fabric curation, we’re committed to excellence at every stitch. 
+        With STUDIO BLACK, you're not just wearing a dress — you're wearing confidence.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+      document.getElementById("overlay").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
 
