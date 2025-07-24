@@ -3,80 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="assets/logo.png" />
+    <meta property="og:image" content="/assets/logo.png" />
     <title>STUDIO BLACK by Manvi</title>
-    <link rel="icon" href="assets/logo.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Poppins:wght@300;400;600&display=swap" />
     <style>
       body {
-        background-color: #000;
-        color: #d4af37;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: black;
+        color: white;
       }
 
-      a:hover {
-        color: #fffbe6;
-        transition: 0.3s ease;
+      header {
+        background-color: black;
+        padding: 1.5rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255, 215, 0, 0.3);
       }
 
-      .nav-link {
-        @apply text-yellow-400 hover:text-white text-sm uppercase tracking-widest;
+      header img {
+        height: 70px;
+        filter: drop-shadow(0 0 10px gold);
+      }
+
+      nav a {
+        color: gold;
+        text-decoration: none;
+        margin-left: 2rem;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #ffd700aa;
+      }
+
+      .hero {
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 5rem 2rem;
+        font-family: 'Cormorant Garamond', serif;
+      }
+
+      .hero h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        color: gold;
+        text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        font-size: 1.4rem;
+        max-width: 700px;
+        color: #ddd;
+      }
+
+      .btn {
+        margin-top: 2rem;
+        background: gold;
+        color: black;
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 0 10px gold;
+        transition: background 0.3s;
+      }
+
+      .btn:hover {
+        background: #e6c200;
+      }
+
+      footer {
+        background-color: black;
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+        border-top: 1px solid rgba(255, 215, 0, 0.2);
+        color: #aaa;
+      }
+
+      footer a {
+        color: gold;
+        text-decoration: none;
       }
     </style>
   </head>
   <body>
-    <!-- Header -->
-    <header
-      class="flex items-center justify-between px-6 py-4 border-b border-yellow-700"
-    >
-      <img src="assets/logo.png" alt="Studio Black Logo" class="h-20" />
-
-      <!-- Navigation -->
-      <nav class="hidden md:flex space-x-8 text-yellow-400">
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">Collection</a>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Contact</a>
+    <header>
+      <img src="/assets/logo.png" alt="STUDIO BLACK logo" />
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Collection</a>
+        <a href="#">About</a>
+        <a href="https://www.instagram.com/studioblackbymanvi" target="_blank">Instagram</a>
+        <a href="https://wa.me/918888888888" target="_blank">WhatsApp</a>
       </nav>
-
-      <!-- Contact Icons -->
-      <div class="flex space-x-4 md:ml-4">
-        <a
-          href="https://www.instagram.com/studio_black_by_manvi"
-          target="_blank"
-          aria-label="Instagram"
-          class="text-yellow-400 hover:text-white text-xl"
-        >
-          <i class="ph ph-instagram-logo"></i>
-        </a>
-        <a
-          href="https://wa.me/919999999999"
-          target="_blank"
-          aria-label="WhatsApp"
-          class="text-yellow-400 hover:text-white text-xl"
-        >
-          <i class="ph ph-whatsapp-logo"></i>
-        </a>
-      </div>
     </header>
 
-    <!-- Hero Section -->
-    <section
-      class="flex flex-col items-center justify-center text-center h-[80vh] px-6"
-    >
-      <h1 class="text-5xl md:text-6xl font-bold mb-6 tracking-wide">
-        STUDIO BLACK by Manvi
-      </h1>
-      <p class="text-lg md:text-xl max-w-2xl">
-        Where timeless Indian elegance meets modern sophistication.<br />
-        Custom-crafted couture for weddings, festivals, and statement moments.
-      </p>
+    <section class="hero">
+      <h1>STUDIO BLACK</h1>
+      <p>Where timeless Indian elegance meets modern sophistication. Custom-designed couture stitched to perfection.</p>
+      <button class="btn">Explore Our Work</button>
     </section>
+
+    <footer>
+      &copy; 2025 STUDIO BLACK by Manvi. All rights reserved. | <a href="https://www.instagram.com/studioblackbymanvi" target="_blank">Instagram</a>
+    </footer>
   </body>
 </html>
+
+      
 
 
