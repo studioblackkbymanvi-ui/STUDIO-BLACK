@@ -1,145 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="STUDIO BLACK by Manvi" />
-  <meta property="og:image" content="logo.png" />
+  <meta property="og:image" content="logo-og.png" />
   <title>STUDIO BLACK by Manvi</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-
-    header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      position: relative;
-    }
-
-    .logo {
-      width: 180px;
-      transition: 0.3s ease-in-out;
-      filter: drop-shadow(0 0 10px #FFD700);
-    }
-
-    .logo:hover {
-      filter: drop-shadow(0 0 20px #FFD700);
-      transform: scale(1.05);
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 250px;
-      height: 100vh;
-      background-color: #111;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      z-index: 999;
-    }
-
-    nav a {
-      color: #FFD700;
-      text-decoration: none;
-      font-size: 1.2rem;
-      font-family: 'Cormorant Garamond', serif;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #fff;
-    }
-
-    main {
-      margin-left: 250px;
-      padding: 2rem;
-    }
-
-    section {
-      margin-bottom: 4rem;
-    }
-
-    h1, h2 {
-      font-family: 'Cormorant Garamond', serif;
-      color: #FFD700;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
-      max-width: 700px;
-    }
-
-    footer {
-      padding: 2rem;
-      text-align: center;
-      background-color: #111;
-      color: #999;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
-
 <body>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#collection">Collection</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <aside class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
 
-  <main>
-    <header id="home">
-      <img src="logo.png" alt="STUDIO BLACK by Manvi Logo" class="logo" />
-    </header>
+  <header class="main-header">
+    <img src="logo.png" alt="STUDIO BLACK Logo" class="logo" />
+  </header>
 
-    <section id="about">
-      <h1>About STUDIO BLACK</h1>
-      <p>STUDIO BLACK by Manvi is where timeless Indian elegance meets modern sophistication. Based in Ludhiana, we specialize in custom-designed ethnic, Indo-Western, and Western couture tailored to perfection. From sarees, lehengas, kurtis, shararas, to gowns and occasion wear, every outfit is made with meticulous attention to detail, fit, and fabric quality.</p>
+  <main class="content">
+    <section class="hero">
+      <h1>STUDIO BLACK by Manvi</h1>
+      <p>Where timeless Indian elegance meets modern sophistication.</p>
+      <a href="https://www.instagram.com/studioblackbymanvi/" target="_blank" class="insta-btn">Follow on Instagram</a>
     </section>
-
-    <section id="collection">
-      <h2>Our Collection</h2>
-      <p>Whether it’s for weddings, festivals, or statement looks, we offer personalized stitching, custom sizing, and fabric curation to bring your vision to life. Because at STUDIO BLACK, you're not just wearing a dress — you're wearing confidence.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>📲 <a href="https://wa.me/918283000452" style="color: #FFD700">WhatsApp Us</a></p>
-      <p>📸 <a href="https://www.instagram.com/studioblackbymanvi" style="color: #FFD700">Instagram</a></p>
-    </section>
-
-    <footer>
-      &copy; 2025 STUDIO BLACK by Manvi. All rights reserved.
-    </footer>
   </main>
 </body>
-
 </html>
 
 
