@@ -1,43 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="assets/logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="assets/logo.png" />
     <title>STUDIO BLACK by Manvi</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="sidebar" id="sidebar">
-        <button onclick="toggleSidebar()">Close</button>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </div>
-    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
-    <header class="hero">
-        <img src="assets/logo.png" alt="STUDIO BLACK Logo" class="logo" />
-        <h1>STUDIO BLACK by Manvi</h1>
-        <p>Where timeless Indian elegance meets modern sophistication.</p>
+    <link rel="icon" href="assets/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+      body {
+        background-color: #000;
+        color: #d4af37;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      a:hover {
+        color: #fffbe6;
+        transition: 0.3s ease;
+      }
+
+      .nav-link {
+        @apply text-yellow-400 hover:text-white text-sm uppercase tracking-widest;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="flex items-center justify-between px-6 py-4 border-b border-yellow-700"
+    >
+      <img src="assets/logo.png" alt="Studio Black Logo" class="h-20" />
+
+      <!-- Navigation -->
+      <nav class="hidden md:flex space-x-8 text-yellow-400">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Collection</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Contact Icons -->
+      <div class="flex space-x-4 md:ml-4">
+        <a
+          href="https://www.instagram.com/studio_black_by_manvi"
+          target="_blank"
+          aria-label="Instagram"
+          class="text-yellow-400 hover:text-white text-xl"
+        >
+          <i class="ph ph-instagram-logo"></i>
+        </a>
+        <a
+          href="https://wa.me/919999999999"
+          target="_blank"
+          aria-label="WhatsApp"
+          class="text-yellow-400 hover:text-white text-xl"
+        >
+          <i class="ph ph-whatsapp-logo"></i>
+        </a>
+      </div>
     </header>
-    <section id="about">
-        <h2>Our Story</h2>
-        <p>Based in Ludhiana, we specialize in custom-designed ethnic, Indo-Western, and Western couture.</p>
+
+    <!-- Hero Section -->
+    <section
+      class="flex flex-col items-center justify-center text-center h-[80vh] px-6"
+    >
+      <h1 class="text-5xl md:text-6xl font-bold mb-6 tracking-wide">
+        STUDIO BLACK by Manvi
+      </h1>
+      <p class="text-lg md:text-xl max-w-2xl">
+        Where timeless Indian elegance meets modern sophistication.<br />
+        Custom-crafted couture for weddings, festivals, and statement moments.
+      </p>
     </section>
-    <section id="services">
-        <h2>What We Offer</h2>
-        <ul>
-            <li>Lehengas & Sarees</li>
-            <li>Indo-Western Fusion</li>
-            <li>Custom Gowns & Occasion Wear</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Instagram: <a href="https://www.instagram.com/betline_studios/" target="_blank">@betline_studios</a></p>
-        <p>WhatsApp: <a href="https://wa.me/" target="_blank">Message Now</a></p>
-    </section>
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
+
+
