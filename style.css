@@ -1,95 +1,85 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Helvetica Neue', sans-serif;
-}
-
+/* Base styling */
 body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
   background-color: #000;
-  color: #fff;
+  color: #f5f5f5;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
-  background-color: #000;
+  padding: 20px 40px;
+  background-color: #111;
 }
 
 .logo {
   height: 60px;
 }
 
-nav a {
-  color: gold;
-  text-decoration: none;
-  margin-left: 2rem;
-  font-weight: bold;
-  transition: color 0.3s ease;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
-nav a:hover {
-  color: #fff;
+nav a {
+  text-decoration: none;
+  color: gold;
+  font-weight: bold;
 }
 
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: url("assets/hero.jpg") no-repeat center center/cover;
-  background-color: #111;
+  background: linear-gradient(to bottom, #000000, #1a1a1a);
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: gold;
-  margin-bottom: 1rem;
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: #ccc;
-  margin-bottom: 2rem;
+  margin: 20px 0;
 }
 
-.cta-buttons a {
-  background: gold;
-  color: #000;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: gold;
+  color: black;
   font-weight: bold;
-  margin: 0 1rem;
-  transition: background 0.3s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.cta-buttons a:hover {
-  background: #fff;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 50px;
 }
 
-.about {
-  padding: 4rem 2rem;
-  background-color: #111;
-  text-align: center;
-}
-
-.about h2 {
-  color: gold;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.about p {
-  max-width: 700px;
-  margin: auto;
-  color: #ddd;
+.item {
+  background-color: #333;
+  height: 300px;
+  border: 2px solid gold;
 }
 
 footer {
   text-align: center;
-  padding: 1.5rem;
-  background-color: #000;
-  color: #666;
-  font-size: 0.9rem;
+  padding: 30px 20px;
+  background-color: #111;
+  color: #aaa;
 }
+
+footer a {
+  color: gold;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
